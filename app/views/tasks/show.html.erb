@@ -1,11 +1,16 @@
-<h1><%= @task.title %></h1>
-<%= link_to edit_task_path do %>
-  <i class="fas fa-edit" style="color: #495057">Edit this task</i>
-<% end %>
-<p><%= @task.details %></p>
-<% if @task.completed %>
-  <i class="far fa-check-square" style="color: #82C91D">This task is completed.</i>
-<% else %>
-  <i class="far fa-square" style="color: #82C91D">This task is not completed yet.</i>
-<% end %>
+<div class="task title-box">
+  <h1><%= @task.title %></h1>
+  <%= link_to edit_task_path do %>
+    <i class="fas fa-edit" style="color: #495057">Edit this task</i>
+  <% end %>
+</div>
+<p class="alert alert-info"><%= @task.details %></p>
+<div class="task-status">
+  <% if @task.completed %>
+    <i class="far fa-check-square" style="color: #82C91D"> This task is completed.</i>
+  <% else %>
+    <i class="far fa-square" style="color: #82C91D"> This task is not completed yet.</i>
+  <% end %>
+</div>
+<br>
 <%= link_to "Back to list", tasks_path %>

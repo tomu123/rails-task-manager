@@ -1,3 +1,27 @@
 // Place all the styles related to the Tasks controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.simple_form > * {
+  margin-bottom: 20px;
+}
+.task-index-title {
+  margin: 20px 0;
+}
+.tasks-list {
+  list-style: none;
+}
+.tasks-list > li {
+  margin-bottom: 10px;
+}
+.task.title-box {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.task-status {
+  margin-bottom: 20px;
+}
+
+.container a {
+  text-decoration: none;
+}
